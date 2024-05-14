@@ -51,10 +51,16 @@ export default SplashScreen;
 const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
+    // borderWidth:1,
+    // borderColor:'red',
+    justifyContent:'flex-end',
+    
   },
   textContainer: {
-    marginTop: "100%",
+    // justifyContent:'flex-end'
+    // marginTop: "100%",
     // paddingHorizontal:20,
+    // bottom:10
   },
   textStyle: {
     color: "#ffff",
@@ -64,7 +70,9 @@ const styles = StyleSheet.create({
   },
   secondContainer: {
     paddingHorizontal: 20,
-    marginTop:60
+    alignContent:'flex-end',
+    bottom:20
+    // marginTop:"0%"
   },
   btn: {
     height: 52,

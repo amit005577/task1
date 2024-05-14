@@ -229,10 +229,11 @@ const HomeScreen = ({navigation}) => {
       </View>
       <Text style={{ ...styles.textstyle, fontSize: 30 }}>Aspen</Text>
       <View style={styles.serchcontainer}>
-        <Search name="search1" size={20} color={"#000000"} />
+        <Search name="search1" size={20} color={"#000000"}  />
         <TextInput
           placeholder="Find things to do"
           style={{ marginLeft: 5, color: "#B8B8B8" }}
+          placeholderTextColor={'black'}
         />
       </View>
       <View style={styles.flalistcontainer}>
@@ -279,6 +280,7 @@ const HomeScreen = ({navigation}) => {
           showsHorizontalScrollIndicator={false}
         />
       </View>
+      <View style={{height:50}} />
     </ScrollView>
   );
 };
