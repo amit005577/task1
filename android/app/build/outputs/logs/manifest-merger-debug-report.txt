@@ -10,6 +10,7 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/amitpate
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/amitpatel/.gradle/caches/transforms-3/7791fe77b8ab9730d0e25ce55c6aa090/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:8:1-18:12
 MERGED from [:react-native-safe-area-context] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.0] /Users/amitpatel/.gradle/caches/transforms-3/4c335a7cb848ac016fa17586f2ae149d/transformed/jetified-react-android-0.71.0-debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/amitpatel/.gradle/caches/transforms-3/9f3f2c3188f38327ba24fabea0cd84f7/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.react:hermes-android:0.71.0] /Users/amitpatel/.gradle/caches/transforms-3/052d6f34d1f9a520e076c8571648c6f7/transformed/jetified-hermes-android-0.71.0-debug/AndroidManifest.xml:2:1-9:12
@@ -186,6 +187,8 @@ MERGED from [:react-native-safe-area-context] /Users/amitpatel/Documents/GitHub/
 MERGED from [:react-native-safe-area-context] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/amitpatel/Documents/GitHub/task1/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.0] /Users/amitpatel/.gradle/caches/transforms-3/4c335a7cb848ac016fa17586f2ae149d/transformed/jetified-react-android-0.71.0-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.0] /Users/amitpatel/.gradle/caches/transforms-3/4c335a7cb848ac016fa17586f2ae149d/transformed/jetified-react-android-0.71.0-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/amitpatel/.gradle/caches/transforms-3/9f3f2c3188f38327ba24fabea0cd84f7/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
