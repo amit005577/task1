@@ -6,60 +6,86 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import HomeScreen from './src/screens/home';
+import User from './src/screens/User';
+import Edit from './src/screens/Notification';
+import Favourite from './src/screens/Favourite';
+import HomeIcon from 'react-native-vector-icons/Feather'
+import SplashScreen from './src/components/splash';
+import DetailPage from './src/screens/DetailPage';
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
+
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+
+function BottomTabNavigator(){
+  return(
+    <Tab.Navigator
+    // initialRouteName="home"
+    screenOptions={{
+      tabBarActiveTintColor: 'blue',
+      tabBarInactiveTintColor:'lightgrey',
+      headerShown:false
+    }}
+  
+  >
+    <Tab.Screen
+      name="home"
+      component={HomeScreen}
+      options={{
+        tabBarLabel: 'Home',
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons name="home" color={color} size={size} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="Notifications"
+      component={Edit}
+      options={{
+        tabBarLabel: 'Notification',
+        tabBarIcon: ({ color, size }) => (
+          <HomeIcon name="bell" color={color} size={size} />
+        ),
+        tabBarBadge: 3,
+      }}
+    />
+    <Tab.Screen
+      name="heart"
+      component={Favourite}
+      options={{
+        tabBarLabel: 'Profile',
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons name="cards-heart-outline" color={color} size={size} />
+        ),
+      }}
+    />
+      <Tab.Screen
+      name="user"
+      component={User}
+      options={{
+        tabBarLabel: 'Profile',
+        tabBarIcon: ({ color, size }) => (
+          <HomeIcon name="user" color={color} size={size} />
+        ),
+      }}
+    />
+  </Tab.Navigator>
+  )
+}
 
 function App() {
   return (
     <NavigationContainer>
-        <Tab.Navigator
-      initialRouteName="Feed"
+      <Stack.Navigator 
       screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
         headerShown:false
       }}
-    
-    >
-      <Tab.Screen
-        name="Feed"
-        component={HomeScreen}
-        options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Notifications"
-        component={HomeScreen}
-        options={{
-          tabBarLabel: 'Updates',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
-          ),
-          tabBarBadge: 3,
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={HomeScreen}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
+      >
+        <Stack.Screen name="splash" component={SplashScreen}  />
+        <Stack.Screen name="home" component={BottomTabNavigator}  />
+        <Stack.Screen name="detail" component={DetailPage}  />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
