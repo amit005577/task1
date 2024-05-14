@@ -58,13 +58,13 @@ const DetailPage = ({ route,navigation }) => {
         }}
       >
         {item.icon == "heater" ? (
-          <DownIcon name="wifi" size={30} />
+          <DownIcon name="wifi" size={30} color={'grey'} />
         ) : item.icon == "tools" ? (
-          <Tools name="tools" size={30} />
+          <Tools name="tools" size={30}color={'grey'} />
         ) : item.icon == "tub" ? (
-          <Tools name="bath" size={30} />
+          <Tools name="bath" size={30} color={'grey'}/>
         ) : item.icon == "pool" ? (
-          <Tools name="swimming-pool" size={30} />
+          <Tools name="swimming-pool" size={30}color={'grey'} />
         ) : null}
         <Text style={{ ...styles.titleStyle, color: item.color }}>
           {item.icon}
@@ -81,7 +81,7 @@ const DetailPage = ({ route,navigation }) => {
         style={{ width: "100%", height: 320 }}
       >
         <Pressable style={styles.iconstyle} onPress={()=>navigation.goBack()}>
-          <Icon name="chevron-back" size={20} />
+          <Icon name="chevron-back" size={20} color={'black'} />
         </Pressable>
       </ImageBackground>
       <View style={styles.bgcolor}>
